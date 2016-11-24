@@ -1,0 +1,96 @@
+body {
+    padding-bottom: 30px;
+    padding-top: 160px;
+    /*background-image: url("../images/LogoNOBG.png");*/
+    /*background-size:  cover;*/
+    /*background-position: 50% 100%;*/
+    color: #3C2313;
+}
+
+@font-face {
+    font-family: myWoffFont;
+    src: url('../fonts/AlexBrush-Regular-OTF.otf') format('otf');
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    iframe {
+        padding-bottom: 10px;
+    }
+
+    .bottom-align-text {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .header  {
+        height: 50px;
+    }
+    .uvod {
+        padding-top: 0;
+    }
+
+}
+
+.uvod {
+    padding: 20px 40px 0 40px;
+}
+.header {
+    height: 110px;
+    background-color: #EED8A9;
+}
+
+.footer {
+    height: 30px;
+    background-color: #EED8A9;
+}
+
+.menu {
+    background-color: #DFB470;
+    border:none;
+
+}
+
+.navbar {
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+.resize-img {
+    max-height: 90%;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    iframe {
+        padding-bottom: 10px;
+    }
+
+    .bottom-align-text {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .header {
+        height: 50px;
+    }
+}
+
+/*gallery*/
+.modal-dialog {width:600px;}
+.thumbnail {margin-bottom:6px;}
