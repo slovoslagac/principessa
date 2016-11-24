@@ -35,31 +35,31 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
                 <strong>Radno vreme:</strong><br><br>
                     <div class="row">
                         <div class="col-xs-6"><em>Ponedeljak</em></div>
-                        <div class="col-xs-6">10:00 - 01:00</div>
+                        <div class="col-xs-6">08:00 - 00:00</div>
                     </div>
                 <div class="row">
                     <div class="col-xs-6"><em>Utorak</em></div>
-                    <div class="col-xs-6">10:00 - 01:00</div>
+                    <div class="col-xs-6">08:00 - 00:00</div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6"><em>Sreda</em></div>
-                    <div class="col-xs-6">10:00 - 01:00</div>
+                    <div class="col-xs-6">08:00 - 00:00</div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6"><em>Četvrtak</em></div>
-                    <div class="col-xs-6">10:00 - 01:00</div>
+                    <div class="col-xs-6">08:00 - 00:00</div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6"><em>Petak</em></div>
-                    <div class="col-xs-6">10:00 - 01:00</div>
+                    <div class="col-xs-6">08:00 - 00:00</div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6"><em>Subota</em></div>
-                    <div class="col-xs-6">10:00 - 01:00</div>
+                    <div class="col-xs-6">08:00 - 00:00</div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6"><em>Nedelja</em></div>
-                    <div class="col-xs-6">10:00 - 01:00</div>
+                    <div class="col-xs-6">08:00 - 00:00</div>
                 </div>
 
             </div>
