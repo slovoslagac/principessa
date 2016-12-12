@@ -16,10 +16,17 @@
 include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
 
 ?>
+<!--main body -->
 
-<div class="uvod container container-fluid">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12"><img src="images/proizvodnja.jpg" class="img-responsive center-block" alt="Responsive image"></div>
+<div class="container container-fluid">
+    <div class="row offer">
+        <h3 class="text-center">Naša ponuda</h3>
+        <?php for($x=3; $x<=10; $x++) { ?>
+        <div class="col-xs-12">
+            <img src="images/meni<?php echo $x;?>.jpg" class="img-responsive center-block" alt="Responsive image">
+        </div>
+        <?php } ?>
+
     </div>
 </div>
 

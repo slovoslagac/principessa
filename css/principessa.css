@@ -1,12 +1,26 @@
 body {
     padding-bottom: 30px;
     padding-top: 160px;
-    /*background-image: url("../images/LogoNOBG.png");*/
+    /*background-image: url("../images/BgBrown.png");*/
     /*background-size:  cover;*/
-    /*background-position: 50% 100%;*/
-    color: #3C2313;
+    /*background-position: center;*/
+    color: #191007;
+    max-width: 100%;
+    height: auto;
 }
 
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.topPadding4 {
+     padding-top: 4px;
+ }
+
+.rightPadding4 {
+    : 4px;
+}
 @font-face {
     font-family: myWoffFont;
     src: url('../fonts/AlexBrush-Regular-OTF.otf') format('otf');
@@ -14,8 +28,8 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding-top: 50px;
-
+        padding: 50px 0 0 0;
+        background-image: none;
     }
     .container {
         padding-left: 0;
@@ -42,22 +56,36 @@ body {
 .uvod {
     padding: 20px 40px 0 40px;
 }
+
+.offer {
+    padding: 10px 10px 10px 10px;
+}
+
 .header {
     height: 110px;
-    background-color: #EED8A9;
+    background-color: #191007;
+    border:none;
+    color: #ffffff;
 }
 
 .footer {
     height: 30px;
-    background-color: #EED8A9;
+    background-color: #191007;
+    color: #ffffff;
+    border:none;
 }
 
 .menu {
-    background-color: #DFB470;
+    /*background-color: #DFB470;*/
     border:none;
+    background-color: #191007;
+    color: #ffffff;
 
 }
 
+a.menu:hover, a.menu:link, a.menu:visited, a.menu:active{
+    color: #ffffff;
+}
 .navbar {
     min-height: 0;
     margin-bottom: 0;

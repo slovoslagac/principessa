@@ -1,66 +1,38 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Principessa</title>
-    <link rel="shortcut icon" href="images/LogoBrownBG-Icon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Bira pravu sirinu uredjaja -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <!--    <link rel="stylesheet" href="css/bts.css">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
-    <!-- Optional theme -->
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">-->
-    <link rel="stylesheet" type="text/css" href="css/principessa.css">
+    <?php
+    require_once(join(DIRECTORY_SEPARATOR, array('includes', 'init.php')));
+    $title = "Principessa";
+    include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'head.php')));
+    ?>
 </head>
 <body>
 <?php
-require_once(join(DIRECTORY_SEPARATOR, array('includes', 'init.php')));
+
 
 // header included in layout
 
 include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
-
 
 ?>
 
 <div class="uvod container container-fluid">
     <div class="row">
         <div id="map-outer" class="col-md-12">
-            <div id="address" class="col-xs-12 col-md-4">
-                <h2>Dođite kod nas...</h2>
-                <strong>Radno vreme:</strong><br><br>
+            <div id="address" class="col-xs-12 col-sm-7 col-md-4">
+                <h2>PRINCIPESSA</h2>
+                <h2>Posetite nas...</h2>
                     <div class="row">
-                        <div class="col-xs-6"><em>Ponedeljak</em></div>
-                        <div class="col-xs-6">08:00 - 00:00</div>
+                        <div class="col-xs-12">Strahinjića Bana 64-66</div>
+                        <div class="col-xs-12">Dorćol, Beograd</div>
+                        <div class="col-xs-12"><strong><em>Ponedeljak-Nedelja</em></strong></div>
+                        <div class="col-xs-12">08:00 - 00:00</div>
+                        <div class="col-xs-12"><strong><em>Telefon:</em></strong></div>
+                        <div class="col-xs-12">+381(60) 66-44-046</div>
+
+
                     </div>
-                <div class="row">
-                    <div class="col-xs-6"><em>Utorak</em></div>
-                    <div class="col-xs-6">08:00 - 00:00</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6"><em>Sreda</em></div>
-                    <div class="col-xs-6">08:00 - 00:00</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6"><em>Četvrtak</em></div>
-                    <div class="col-xs-6">08:00 - 00:00</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6"><em>Petak</em></div>
-                    <div class="col-xs-6">08:00 - 00:00</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6"><em>Subota</em></div>
-                    <div class="col-xs-6">08:00 - 00:00</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6"><em>Nedelja</em></div>
-                    <div class="col-xs-6">08:00 - 00:00</div>
-                </div>
 
             </div>
             <hr class="visible-xs visible-sm">
@@ -69,6 +41,8 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.5119608519485!2d20.462576829263284!3d44.820589949962695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDQ5JzE0LjEiTiAyMMKwMjcnNDcuMiJF!5e0!3m2!1sen!2srs!4v1480000507301"
                     width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
+
+            <hr>
         </div><!-- /map-outer -->
     </div> <!-- /row -->
 
@@ -99,6 +73,7 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
     <!--            </div>-->
     <!--        </form>-->
     <!--    </div><!-- /row -->
+    <hr>
 </div><!-- /container -->
 
 

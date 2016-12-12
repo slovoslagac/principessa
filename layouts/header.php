@@ -2,12 +2,12 @@
     <!--    header part-->
     <div class="container container-fluid header hidden-xs ">
         <div class="col-sm-6 col-xs-12"><span>
-            <img src="images/LogoBrownBG.png" class="img-responsive " alt="Responsive image"></span>
+            <img src="images/LogoWhiteBG.png" class="img-responsive " alt="Responsive image"></span>
         </div>
         <div class="col-sm-6 col-xs-12 text-right">
             <br>
             <p><span class="glyphicon glyphicon-phone-alt"></span> 381(60) 66-44-046</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> info@dolceprincipessa.rs</p>
+            <p><a href="mailto:info@dolceprincipessa.rs"><span class="glyphicon glyphicon-envelope"></span> info@dolceprincipessa.rs</a></p>
             <p><span class="glyphicon glyphicon-pushpin"></span> Strahinjica Bana 64-66, Beograd</p>
         </div>
     </div>
@@ -28,7 +28,7 @@
                     <li><a href="index.php">Naslovna</a></li>
                     <li><a href="galerija.php">Galerija</a></li>
                     <li><a href="proizvodnja.php">Proizvodnja</a></li>
-                    <li><a href="prodaja.php">Prodaja</a></li>
+                    <li><a href="meni.php">Meni</a></li>
                     <li><a href="kontakt.php">Kontakt</a></li>
                 </ul>
             </div>

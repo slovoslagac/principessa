@@ -7,16 +7,22 @@
  */
 ?>
 <nav class="navbar navbar-default navbar-fixed-bottom footer">
-
+    <div class="container">
         <div class="row row-fluid">
             <div class="col-sm-4 hidden-xs">
 
             </div>
-            <div class="col-sm-4 col-xs-12 text-center">
+            <div class="col-sm-4 col-xs-12 text-center topPadding4">
+                <div class="col-xs-1 col-xs-offset-5">
+                    <a href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+                </div>
+                <div class="col-xs-1">
+                    <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+              <div class="col-sm-4 hidden-xs text-right center-block  rightPadding4">
                 <h6>slovoslagac @ 2016</h6>
             </div>
-            <div class="col-sm-4 hidden-xs">
-
-            </div>
-            </div>
+        </div>
+    </div>
 </nav>
