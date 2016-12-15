@@ -19,7 +19,7 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
 
 <div class="container">
 
-    <div class="row">
+    <div class="row" id="gallery">
 
         <div class="col-xs-12">
             <h1 class="page-header">Principessa</h1>
@@ -37,7 +37,7 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
             <a title="Slika 4" href="#"><img class="thumbnail img-responsive" src="images/cake4.jpg"></a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <a title="Slika 5" href="#"><img class="thumbnail img-responsive" src="images/cake5.jpg"></a>
         </div>
 

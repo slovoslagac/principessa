@@ -20,29 +20,41 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
 <div class="uvod container container-fluid">
     <div class="row">
         <div id="map-outer" class="col-md-12">
+            <h2>PRINCIPESSA</h2>
             <div id="address" class="col-xs-12 col-sm-7 col-md-4">
-                <h2>PRINCIPESSA</h2>
-                <h2>Posetite nas...</h2>
-                    <div class="row">
-                        <div class="col-xs-12">Strahinjića Bana 64-66</div>
-                        <div class="col-xs-12">Dorćol, Beograd</div>
-                        <div class="col-xs-12"><strong><em>Ponedeljak-Nedelja</em></strong></div>
-                        <div class="col-xs-12">08:00 - 00:00</div>
-                        <div class="col-xs-12"><strong><em>Telefon:</em></strong></div>
-                        <div class="col-xs-12">+381(60) 66-44-046</div>
+                <h2>Poslastičarnica</h2>
+                <div class="row">
+                    <div class="col-xs-12">Strahinjića Bana 64-66</div>
+                    <div class="col-xs-12">Dorćol, Beograd</div>
+                    <div class="col-xs-12"><strong><em>Ponedeljak-Nedelja</em></strong></div>
+                    <div class="col-xs-12">08:00 - 00:00</div>
 
-
-                    </div>
-
+                </div>
             </div>
             <hr class="visible-xs visible-sm">
             <div id="map-container" class="col-xs-12 col-md-8">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.5119608519485!2d20.462576829263284!3d44.820589949962695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDQ5JzE0LjEiTiAyMMKwMjcnNDcuMiJF!5e0!3m2!1sen!2srs!4v1480000507301"
-                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d841.3802388729504!2d20.46341328551625!3d44.820454195745434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f631f050fd93685!2sDolce+Principessa!5e0!3m2!1sen!2srs!4v1481800158540"
+                    width="100%" height="400" frameborder="0" style="..." allowfullscreen></iframe>
             </div>
 
             <hr>
+
+            <div id="address" class="col-xs-12 col-sm-7 col-md-4">
+                <h2>Proizvodnja</h2>
+                <div class="row">
+                    <div class="col-xs-12">Svetog Nikole 49a</div>
+                    <div class="col-xs-12">Zvezdara, Beograd</div>
+                    <div class="col-xs-12"><strong><em>Telefon:</em></strong></div>
+                    <div class="col-xs-12">+ 381(11) 4082-931</div>
+                </div>
+            </div>
+            <hr class="visible-xs visible-sm">
+            <div id="map-container" class="col-xs-12 col-md-8">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d776.720759157227!2d20.500166553943306!3d44.800852110288254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDQ4JzAzLjEiTiAyMMKwMzAnMDIuOSJF!5e0!3m2!1sen!2srs!4v1481801202383"
+                    width="100%" height="400" frameborder="0" style="..." allowfullscreen></iframe>
+            </div>
         </div><!-- /map-outer -->
     </div> <!-- /row -->
 

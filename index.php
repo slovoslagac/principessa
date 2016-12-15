@@ -33,7 +33,12 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
         </div>
         <hr class="visible-xs visible-sm">
         <div class="col-sm-12 col-md-8 center-block">
-            <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel" data-interval="10000">
+            <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel" data-interval="5000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner text-center">
                     <div class="item active">
                         <img src="images/cake1.jpg" class="img-responsive" alt="Responsive image">
@@ -59,6 +64,24 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
         </div>
     </div>
     <hr>
+    <div class="row" id="suggestion">
+        <div class="col-xs-12">
+            <h3><em>Naša preporuka</em></h3>
+        </div>
+        <div class="col-xs-12 col-sm-4 center-block">
+            <h4 class="text-center">Osvežavajuća pića</h4>
+            <img src="images/test1.jpg" alt="..." class="img-circle img-responsive center-block">
+        </div>
+        <div class="col-xs-12 col-sm-4 center-block">
+            <h4 class="text-center">Ukusan doručak</h4>
+            <img src="images/test2.jpg" alt="..." class="img-circle img-responsive center-block">
+        </div>
+        <div class="col-xs-12 col-sm-4 center-block">
+            <h4 class="text-center">Vrhunski sladoledi</h4>
+            <img src="images/test3.jpg" alt="..." class="img-circle img-responsive center-block">
+        </div>
+    </div>
+
 </div>
 
 <!--footer included-->
