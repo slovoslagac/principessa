@@ -40,15 +40,12 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
                     <li data-target="#carousel" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner text-center">
-                    <div class="item active">
-                        <img src="images/cake1.jpg" class="img-responsive" alt="Responsive image">
-                    </div>
-                    <div class="item">
-                        <img src="images/cake2.jpg" class="img-responsive" alt="Responsive image">
-                    </div>
-                    <div class="item">
-                        <img src="images/cake3.jpg" class="img-responsive" alt="Responsive image">
-                    </div>
+
+                    <?php for ($i = 1; $i <= 3; $i++) { ?>
+                        <div class="item <?php echo ($i == 1)? 'active': '';?>">
+                            <img src="images/<?php echo "nas$i.jpg" ?>" class="img-responsive" alt="Responsive image">
+                        </div>
+                    <?php } ?>
                 </div>
 
                 <!-- Controls -->
@@ -70,15 +67,15 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
         </div>
         <div class="col-xs-12 col-sm-4 center-block">
             <h4 class="text-center">Osvežavajuća pića</h4>
-            <img src="images/test1.jpg" alt="..." class="img-circle img-responsive center-block">
+            <a href="meni.php#men2"><img src="images/test1.jpg" alt="..." class="img-circle img-responsive center-block"></a>
         </div>
         <div class="col-xs-12 col-sm-4 center-block">
             <h4 class="text-center">Ukusan doručak</h4>
-            <img src="images/test2.jpg" alt="..." class="img-circle img-responsive center-block">
+            <a href="meni.php#men8"><img src="images/test2.jpg" alt="..." class="img-circle img-responsive center-block"></a>
         </div>
         <div class="col-xs-12 col-sm-4 center-block">
             <h4 class="text-center">Vrhunski sladoledi</h4>
-            <img src="images/test3.jpg" alt="..." class="img-circle img-responsive center-block">
+            <a href="meni.php#men5"><img src="images/test3.jpg" alt="..." class="img-circle img-responsive center-block"></a>
         </div>
     </div>
 

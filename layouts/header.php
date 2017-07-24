@@ -28,7 +28,7 @@
                     <li><a href="index.php">Naslovna</a></li>
                     <li><a href="meni.php">Meni</a></li>
                     <li><a href="galerija.php">Galerija</a></li>
-                    <li><a href="proizvodnja.php">Proizvodnja</a></li>
+<!--                    <li><a href="proizvodnja.php">Proizvodnja</a></li>-->
                     <li><a href="kontakt.php">Kontakt</a></li>
                 </ul>
             </div>

@@ -5,7 +5,9 @@
  * Date: 12.12.2016
  * Time: 16:33
  */
-?>
+
+include_once("analytics.php") ?>
+
 <meta charset="UTF-8">
 <title><?php echo $title;?></title>
 <link rel="shortcut icon" href="images/LogoBrownBG-Icon.png">
@@ -20,3 +22,4 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/principessa.css">
+<link rel="stylesheet" href="https://cdnjs.com/libraries/ekko-lightbox.">

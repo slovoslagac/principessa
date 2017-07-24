@@ -4,7 +4,6 @@
     body {
         font-family: Verdana, sans-serif;
         margin: 0;
-        padding-top: 0px;
     }
 
     * {
@@ -21,18 +20,21 @@
         clear: both;
     }
 
+    .column {
+        float: left;
+        width: 25%;
+    }
 
     /* The Modal (background) */
     .modal {
         display: none;
-        position: absolute;
+        position: fixed;
         z-index: 1;
-        margin:auto;
-        padding: 5% 10% 10% 10%;
+        padding-top: 100px;
         left: 0;
         top: 0;
         width: 100%;
-        /*height: 100%;*/
+        height: 100%;
         overflow: auto;
         background-color: black;
     }
@@ -40,15 +42,11 @@
     /* Modal Content */
     .modal-content {
         position: relative;
-        /*background-color: #fefefe;*/
-        /*padding: 10%;*/
-        /*padding: 0 10% 10% 10%;*/
-        margin:auto;
-        display: block;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
         width: 90%;
-        /*height: 100%;*/
         max-width: 1200px;
-        z-index: 0;
     }
 
     /* The Close Button */
@@ -161,51 +159,31 @@
 
 include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
 
-$podnaslov = "Principessa";
-$maxnum = 16;
 ?>
 
 <div class="container">
 
-    <div class="row" id="gallery">
+    <div class="row">
         <div class="col-xs-12">
-            <h1 class="page-header"><?php echo $podnaslov ?></h1>
+            <h1 class="page-header">Principessa</h1>
         </div>
-        <?php for ($j = 1; $j <= $maxnum; $j++) {
-            if($j>4 and $j < 13 and $podnaslov != 'Kolači') { $podnaslov = 'Kolači'?>
-                <div class="col-xs-12">
-                    <h1 class="page-header"><?php echo $podnaslov ?></h1>
-                </div>
-
-               <?php
-            } elseif($j > 12 and $podnaslov != 'Sladoledi') { $podnaslov = 'Sladoledi'?>
-                <div class="col-xs-12">
-                    <h1 class="page-header"><?php echo $podnaslov ?></h1>
-                </div>
-
-                <?php
-                }
-
-
-            ?>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb" onkeypress="closeModal()">
-                <img class="thumbnail img-responsive hover-shadow cursor" src="images/gallery/<?php echo "pic$j" ?>.jpg" onclick="openModal();currentSlide(<?php echo $j?>)" >
+        <?php for ($j = 1; $j <= 4; $j++) { ?>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+                <img class="thumbnail img-responsive hover-shadow cursor" src="images/<?php echo "lok$j" ?>.jpg" onclick="openModal();currentSlide(<?php echo $j?>)" >
             </div>
         <?php } ?>
     </div>
 
 </div>
 
-<div id="myModal" class="modal" data-keyboard="true" tabindex="0" >
+<div id="myModal" class="modal">
     <span class="close cursor" onclick="closeModal()">&times;</span>
-
     <div class="modal-content">
 
-        <?php for ($j = 1; $j <= $maxnum; $j++) { ?>
+        <?php for ($j = 1; $j <= 4; $j++) { ?>
         <div class="mySlides">
-            <div class="numbertext"><?php echo $j ?> / <?php echo $maxnum ?></div>
-            <img class="img-responsive center-block" src="images/gallery/<?php echo "pic$j" ?>.jpg" style="width:100%">
+            <div class="numbertext"><?php echo $j ?> / 4</div>
+            <img src="images/<?php echo "lok$j" ?>.jpg" style="width:100%">
         </div>
         <?php } ?>
 
@@ -226,7 +204,43 @@ $maxnum = 16;
 include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'footer.php')));
 
 ?>
-<script src="js/principessa.js"></script>
+<script>
+    function openModal() {
+        document.getElementById('myModal').style.display = "block";
+    }
 
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
 </body>
 </html>

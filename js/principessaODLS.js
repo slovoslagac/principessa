@@ -74,6 +74,9 @@
 //    $('.modal-title').text('Image ' + number);
 //});
 
+$(document).keypress(function(e) {
+    document.getElementById('myModal').style.display = "none";
+});
 
 
 function openModal() {
@@ -109,19 +112,23 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += "active";
+    dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
-};
+}
 
-window.onkeypress = function( event ) {
-    //if ( event.keyCode == 27 ) {
-        console.log(event.keyCode);
-    //}
-};
+document.onkeypress = function(){checkKey(e)};
 
-//window.onkeydown = function( event ) {
-//    if ( event.keyCode == 27 ) {
-//        window.close();
-//        document.getElementsByClassName("").style.display = "none";
-//    }
-//};
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '37') {
+        // left arrow
+        plusSlides(-1);
+    }
+    else if (e.keyCode == '39') {
+        // right arrow
+        plusSlides(1);
+    }
+}
+

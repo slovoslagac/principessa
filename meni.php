@@ -22,8 +22,9 @@ include(join(DIRECTORY_SEPARATOR, array(SITE_LAYOUTS, 'header.php')));
     <div class="row offer">
         <h3 class="text-center">Naša ponuda</h3>
         <?php for($x=3; $x<=10; $x++) { ?>
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-6" id="men<?php echo $x?>">
             <img src="images/meni<?php echo $x;?>.jpg" class="img-responsive center-block" alt="Responsive image">
+            <br>
         </div>
         <?php } ?>
 
